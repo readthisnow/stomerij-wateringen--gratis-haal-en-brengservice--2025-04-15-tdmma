@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stomerij Wateringen - Gratis Haal en Brengservice</title>
+    <meta name="description" content="Professionele stomerij services in Wateringen met gratis haal- en brengservice. Ervaar het gemak van onze premium wasservice!">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="font-sans antialiased text-gray-900 bg-white">
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50" x-data="{ isOpen: false }">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex-shrink-0">
+                    <a href="/" class="text-2xl font-bold text-blue-600">Stomerij Wateringen</a>
+                </div>
+                
+                <button @click="isOpen = !isOpen" class="md:hidden p-2 rounded-md hover:bg-gray-100 transition duration-300">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="#diensten" class="text-gray-600 hover:text-blue-600 transition duration-300">Diensten</a>
+                    <a href="#voordelen" class="text-gray-600 hover:text-blue-600 transition duration-300">Voordelen</a>
+                    <a href="#faq" class="text-gray-600 hover:text-blue-600 transition duration-300">FAQ</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition duration-300">Contact</a>
+                </div>
+            </div>
+
+            <div x-show="isOpen" class="md:hidden mt-4 space-y-4">
+                <a href="#diensten" class="block text-gray-600 hover:text-blue-600 transition duration-300">Diensten</a>
+                <a href="#voordelen" class="block text-gray-600 hover:text-blue-600 transition duration-300">Voordelen</a>
+                <a href="#faq" class="block text-gray-600 hover:text-blue-600 transition duration-300">FAQ</a>
+                <a href="#contact" class="block text-gray-600 hover:text-blue-600 transition duration-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative pt-32 pb-24 bg-gradient-to-r from-blue-50 to-blue-100">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-8">
+                        🌟 Stomerij Wateringen: Gratis Haal- en Brengservice! 🚚
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-600 mb-12">
+                        ⚡️ Nog nooit was stomen zo gemakkelijk! Mis deze kans niet - 
+                        Sluit je aan bij honderden tevreden klanten in Wateringen
+                    </p>
+                    <a href="https://wasserettewestland.nl" class="inline-block px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-full shadow-lg hover:bg-blue-700 transform hover:scale-105 transition duration-300">
+                        Direct Reserveren
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="diensten" class="py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                    🔥 Onze Exclusieve Diensten
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300">
+                        <div class="text-4xl mb-4">👕</div>
+                        <h3 class="text-xl font-bold mb-4">Premium Stoomservice</h3>
+                        <p class="text-gray-600">Professionele behandeling voor al uw delicate kleding</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300">
+                        <div class="text-4xl mb-4">🚚</div>
+                        <h3 class="text-xl font-bold mb-4">Gratis Ophaal & Bezorg</h3>
+                        <p class="text-gray-600">Binnen 24 uur bij u thuis opgehaald en teruggebracht</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300">
+                        <div class="text-4xl mb-4">⚡️</div>
+                        <h3 class="text-xl font-bold mb-4">Express Service</h3>
+                        <p class="text-gray-600">Spoedservice beschikbaar wanneer u het nodig heeft</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section id="voordelen" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                    ✨ Waarom Kiezen Voor Ons?
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Ervaren Professionals</h3>
+                            <p class="text-gray-600">Meer dan 20 jaar ervaring in het vak</p>
+                        </div>
+                    </div>
+                    <!-- More benefits... -->
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-24 bg-white" x-data="{selected:null}">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                    Veelgestelde Vragen
+                </h2>
+                <div class="max-w-3xl mx-auto space-y-4">
+                    <div class="border rounded-lg">
+                        <button @click="selected !== 1 ? selected = 1 : selected = null" class="w-full px-6 py-4 text-left hover:bg-gray-50">
+                            <h3 class="text-lg font-semibold">Hoe werkt de haal- en brengservice?</h3>
+                        </button>
+                        <div x-show="selected === 1" class="px-6 pb-4">
+                            <p class="text-gray-600">Wij halen uw kleding op het gewenste adres op en brengen het schoon weer terug.</p>
+                        </div>
+                    </div>
+                    <!-- More FAQ items... -->
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-24 bg-blue-600">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">
+                    🎉 Start Vandaag Nog!
+                </h2>
+                <p class="text-xl text-white/90 mb-12">
+                    Profiteer nu van onze speciale aanbieding
+                </p>
+                <a href="https://wasserettewestland.nl" class="inline-block px-8 py-4 text-lg font-semibold text-blue-600 bg-white rounded-full shadow-lg hover:bg-gray-100 transform hover:scale-105 transition duration-300">
+                    Direct Reserveren
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <p class="mb-2">Email: info@wasserettewestland.nl</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-400 transition duration-300">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition duration-300">Algemene Voorwaarden</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Volg Ons</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-blue-400 transition duration-300">
+                            <span class="sr-only">Facebook</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M18.77,7.46H14.5v-1.9c0-.9.6-1.1,1-1.1h3V.5L14.21.5C10.57.5,9.82,3.44,9.82,6.46V7.46H7v4h2.82v11.5h4.68V11.46h3.77Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center">
+                <p>&copy; 2024 Stomerij Wateringen. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
